@@ -1,0 +1,90 @@
+.general-info-section {
+
+}
+
+.our-destination-block {
+
+}
+
+aside {
+    background: $aside;
+    border-radius: remy(5px);
+    overflow: hidden;
+    & ul {
+        max-height: remy(350px);
+        overflow: auto;
+        & li {
+            display: block;
+            & a {
+                line-height: 1.31;
+                color: $gray;
+                display: block;
+                padding: remy(10px) remy(20px);
+                font-size: $size_m;
+               
+                margin-bottom: remy(5px);
+                margin-top: remy(5px);
+                @include transition(.2s, ease-in-out);
+                &:hover ,  &:focus {
+                    color: $gray;
+                    background: #d4f1ff;
+                }
+            }
+
+            &.active a, &.active a:focus {
+                color: $blue-bold;
+                font-family: $Sbold_font;
+                text-indent: remy(4px);
+                background: $blue-light;
+            }
+            &:last-of-type a {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.sidebar-title {
+    line-height: 1.31;
+    color: $gray;
+    display: block;
+    padding: remy(15px) remy(20px);
+    font-size: $size_m;
+    background: #56c7f8;
+    color: $white;
+    font-family: $Sbold_font;
+    @include transition(.2s, ease-in-out);
+}
+
+.destination-container {
+    
+    .destination-image {
+        @include full-block;
+        height: remy(400px);
+        & img {
+            @include full-image-cover;
+        }
+    }
+
+    .destination-info {
+        & .destination-title {
+            padding: remy(40px) 0;
+            * {
+                font-size: remy(28px);
+                line-height: 1.32;
+                font-family: $Sbold_font;
+                color: $dark_light;
+            }
+        }
+
+        & .destination-content {
+            margin-bottom: remy(40px);
+            line-height: 1.69;
+            font-size: $size_m;
+            color: $dark_light;
+            &:last-of-type {
+                margin-bottom: remy(68px);
+            }
+        }
+    }
+}

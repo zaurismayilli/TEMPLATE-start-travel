@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8" height="4.947" viewBox="0 0 8 4.947">
+    <defs>
+        <style>
+            .cls-1{fill:#009ee3}
+        </style>
+    </defs>
+    <path id="chevron-down" d="M6.94 8.58L10 11.64l3.06-3.06.94.947-4 4-4-4z" class="cls-1" transform="translate(-6 -8.58)"/>
+</svg>

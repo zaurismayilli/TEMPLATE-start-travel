@@ -1,0 +1,99 @@
+/******** [----- Landing  -----] *******/
+.landing-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background:#fff;
+}
+
+.landing-ul {
+
+    & li {
+        margin-right: remy(124px);
+        display: inline-block;
+        vertical-align: middle;
+        & a {
+            font-size: remy(21px);
+            color: $blue_bold;
+            line-height: 1.33;
+            font-family: $Sbold_font;
+            position: relative;
+            text-align: center;
+            display: block;
+            width: remy(160px);
+            &:hover:before {
+                animation: rotation 2.0s infinite;
+            }
+            &:before {
+                content: "";
+                bottom: calc(100% - -54px);
+                left: remy(5px);
+                width: 100%;
+                margin: auto;
+                position: absolute;
+                width: remy(162px);
+                height: remy(174px);
+                z-index: 2;
+                background:url('icons/landing-cursor.svg') no-repeat center;
+                background-size: 72% 41%;
+                @include transition(.2s, linear);
+                animation: rotationOut 2.0s forwards;
+            }
+            &:after {
+                content: "";
+                bottom: calc(100% - -54px);
+                left: 0;
+                right: 0;
+                width: 100%;
+                margin: auto;
+                position: absolute;
+                width: remy(160px);
+                height: remy(160px);
+                border-radius: 50%;
+                border:remy(2px) solid $blue_bold;
+                background:$white url('icons/landing.png') no-repeat center;
+                background-size: 65% 55%;
+                @include transition(.2s, ease-in-out);
+            }
+
+            &:hover:after {
+                box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.05);
+            }
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+
+@keyframes rotation {
+    0%{
+        transform:scale(1) rotate(0deg);
+    }
+	50% {
+		transform:scale(1) rotate(80deg);
+	}
+	100% {
+		transform:scale(1) rotate(-180deg);
+	}
+}
+
+@keyframes rotationOut {
+    0%{
+        transform:scale(1) rotate(-180deg);
+    }
+	50% {
+		transform:scale(1) rotate(80deg);
+	}
+	100% {
+		transform:scale(1) rotate(0deg);
+	}
+}

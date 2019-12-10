@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16">
+    <defs>
+        <style>
+            .cls-1{fill:#01a1d1}
+        </style>
+    </defs>
+    <path id="email-outline" d="M4 4h16a2.006 2.006 0 0 1 2 2v12a2.006 2.006 0 0 1-2 2H4a2 2 0 0 1-2-2V6a1.993 1.993 0 0 1 2-2m8 7l8-5H4l8 5m-8 7h16V8.37l-8 4.99-8-4.99z" class="cls-1" transform="translate(-2 -4)"/>
+</svg>

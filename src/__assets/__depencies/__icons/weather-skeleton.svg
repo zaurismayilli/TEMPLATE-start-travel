@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="220" viewBox="0 0 540 220">
+  <g id="weather_skeleton" data-name="weather skeleton" transform="translate(-634 -1364)">
+    <rect id="Rectangle_13" data-name="Rectangle 13" width="540" height="220" rx="10" transform="translate(634 1364)" fill="#f8f8f8"/>
+    <rect id="Rectangle_230" data-name="Rectangle 230" width="118" height="33" rx="5" transform="translate(659 1388)" fill="#eee"/>
+    <rect id="Rectangle_232" data-name="Rectangle 232" width="51" height="99" rx="5" transform="translate(667 1459)" fill="#eee"/>
+    <rect id="Rectangle_233" data-name="Rectangle 233" width="51" height="99" rx="5" transform="translate(738 1459)" fill="#eee"/>
+    <rect id="Rectangle_234" data-name="Rectangle 234" width="51" height="99" rx="5" transform="translate(809 1459)" fill="#eee"/>
+    <rect id="Rectangle_235" data-name="Rectangle 235" width="51" height="99" rx="5" transform="translate(880 1459)" fill="#eee"/>
+    <rect id="Rectangle_236" data-name="Rectangle 236" width="51" height="99" rx="5" transform="translate(950 1459)" fill="#eee"/>
+    <rect id="Rectangle_237" data-name="Rectangle 237" width="51" height="99" rx="5" transform="translate(1021 1459)" fill="#eee"/>
+    <rect id="Rectangle_238" data-name="Rectangle 238" width="51" height="99" rx="5" transform="translate(1092 1459)" fill="#eee"/>
+    <rect id="Rectangle_231" data-name="Rectangle 231" width="108" height="23" rx="5" transform="translate(1041 1393)" fill="#eee"/>
+  </g>
+</svg>

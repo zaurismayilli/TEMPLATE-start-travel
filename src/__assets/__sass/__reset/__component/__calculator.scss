@@ -1,0 +1,64 @@
+/******** [----- Calculator -----] *******/
+.calculator {
+    &-section {
+        height: remy(300px);
+    position: relative;
+    }
+    &-block {
+        z-index: 1;
+        position: relative;
+        padding-top: remy(43px);
+
+        .form-group > input,  .form-group > select {
+            height: remy(44px) !important;
+        }
+    }
+    &-result {
+        font-size: $size-xm;
+        color: $white;
+        font-family: $bold_font;
+        font-weight: bold;
+        text-align: center;
+        margin-top: remy(26px);
+        text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        line-height: 1.34;
+    }
+
+    &-title {
+        font-size: $size-xm;
+        color: $blue-bold;
+        font-family: $Sbold_font;
+        text-align: center;
+        line-height: 1.34; 
+        margin-bottom: remy(40px);
+    }
+}
+
+.section-cover {
+    height: 100%;
+    @include absolute;
+    img {
+        @include full-image-cover;
+    }
+    &:before {
+        content:"";
+        @include absolute;
+        opacity: 0.6;
+        pointer-events: none;
+        background-image: linear-gradient(to bottom, #ffffff, #009ee3);
+    }
+    &:after {
+        content:"";
+        @include absolute;
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background:url('icons/calculator.jpg') no-repeat center;
+        background-size: cover ;
+    }
+
+    
+}

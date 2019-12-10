@@ -1,0 +1,58 @@
+// fonts starts //
+// page all font-family 
+$light_font                : "SegoeUI-Light";
+$Slight_font               : "SegoeUI-Semi-Light";
+$regular_font              : "SegoeUI-Regular";
+$bold_font                 : "SegoeUI-Bold";
+$Sbold_font                : "SegoeUI-Semi-Bold";
+$black_font                : "SegoeUI-Black";
+
+// page all font size 
+$size_xs            : remy(9px);
+$size_s             : remy(12px);
+$size_m             : remy(16px); 
+$size_xm            : remy(35px);     
+$size-xl            : remy(36px);    
+$size_xxl           : remy(50px);
+
+$size_sm            : 13px;
+$size_xxm           : 15px;
+$size_l             : 18px;
+$size_llx           : 20px;
+$size_sxl           : 23px;
+
+$size_big           : 50px;
+
+// *********  font start  ********* //
+
+@font-face {
+    font-family:$light_font;   
+    src: url("fonts/segoe/segoeuil.ttf");
+}
+
+@font-face {
+    font-family:$Slight_font;   
+    src: url("fonts/segoe/segoeuisl.ttf");
+}
+
+@font-face {
+    font-family: $regular_font;   
+    src: url("fonts/segoe/segoeui.ttf");
+}
+
+@font-face {
+    font-family:$bold_font;   
+    src: url("fonts/segoe/segoeuib.ttf");
+}
+
+@font-face {
+    font-family:$Sbold_font;   
+    src: url("fonts/segoe/seguisb.ttf");
+}
+
+@font-face {
+    font-family:$black_font;   
+    src: url("fonts/segoe/seguibl.ttf");
+}
+
+// *********  font end  ********* //

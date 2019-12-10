@@ -1,0 +1,57 @@
+/******** [----- SCREEN 1199 -----] *******/
+@media only screen and (min-width: remy(1199px)) {
+    // .container {
+    //   width: 1300px;
+    // }
+}
+
+@media only screen and (max-width: remy(1199px)) {
+    header {
+        .header-menus > li {
+            margin-left: remy(45px);
+        }
+    }
+
+     .custom-select-box .select-selected {
+        overflow: hidden;
+        padding: 0 remy(34px) 0 remy(20px);
+     }
+
+     .weather-content ul {
+         padding: 0;
+     }
+
+     .currency-content {
+        ul li span:first-of-type:after {
+            top: 50%;
+            transform: translateY(-50%);
+            right: remy(-25px);
+        }
+
+        ul li span {
+            margin-right: remy(33px);
+        }
+
+         ul li span:nth-child(2n):after {
+            right: remy(-48px);
+        }
+
+         ul li span:last-of-type {
+            margin-left: remy(9px);
+        }
+     }
+
+     .mini-tour {
+        height: 100px;
+     }
+
+     .transparent-style-select .select-selected {
+         padding-left: 0;
+     }
+
+     footer {
+        .sponcor li {
+            margin-right: remy(25px);
+        }
+     }
+}

@@ -1,0 +1,37 @@
+// [----- DEPENCIES -----] //
+@import '__depencies/__color';
+
+
+// [----- MIXIN -----] //
+@import '__mixin/__mixin';
+
+
+/******** [----- FONTS -----] *******/
+@import '__fonts/__font';
+
+/******** [----- RESET -----] *******/
+@import '__reset-default/__reset';
+
+/*
+=================================================
+    ===---===       COMPONENT     ===---===
+=================================================
+*/
+@import '__component/__button',
+'__component/__icons',
+'__component/__cover', 
+'__component/__bonus_pocket',
+'__component/__subscribe',
+'__component/__main_slider',
+'__component/__breadcrumb',
+'__component/__tour',
+'__component/__geo_map',
+'__component/__calculator',
+'__component/__form',
+'__component/__currency',
+'__component/__gallery',
+'__component/__pagination',
+'__component/__our_destination',
+'__component/__tour_single',
+'__component/__landing',
+'__component/__modal';

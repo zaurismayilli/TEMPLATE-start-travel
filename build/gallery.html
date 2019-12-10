@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <title> Start Travel </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/css/icons/fav.png">
+    <link rel="stylesheet" href="assets/css/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="scrollable">
+    <div class="loading-page"></div>
+    <!-- ==== ==== ==== ==== HEADER  start ==== ==== ==== ==== -->
+    <header>
+        <div class="mobile-menu-container">
+            <ul class="header-menus">
+                <li class="active"> <a href="index2.html"> Home </a> </li>
+                <li> <a href="about.html"> About us </a> </li>
+                <li> <a href="our-destination.html"> Our destination </a> </li>
+                <li class="dropdown"> <a href="#"> Services </a>
+                    <ul>
+                        <li> <a href="#"> Air ticket </a> </li>
+                        <li> <a href="#"> Insurance </a> </li>
+                        <li> <a href="#"> Visa support </a> </li>
+                        <li> <a href="#"> Hotel booking </a> </li>
+                    </ul>
+                </li>
+                <li> <a href="tour.html"> Tours </a> </li>
+                <li> <a href="gallery.html"> Gallery </a> </li>
+                <li> <a href="contact.html"> Contact us </a> </li>
+            </ul>
+            <div class="phone">
+                <a href="tel:+994125975070"> +99412 597 50 70 </a>
+            </div>
+            <div class="social">
+                <ul>
+                    <li class="first"> <a href="#" target="_blank" class="in"> <i class="fab fa-instagram"></i> </a>
+                    </li>
+                    <li> <a href="#" target="_blank" class="fb"> <i class="fab fa-facebook-f"></i> </a>
+                    </li>
+                    <li> <a href="#" target="_blank" class="ln"> <i class="fab fa-linkedin-in"></i> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="flex flex-space-between">
+                <button type="button" class="mobile-toggle-btn">  </button>
+                <div class="header-logo">
+                    <a href="index.html"> <img src="assets/css/icons/logo.svg" alt="STart Travel" /> </a>
+                </div>
+                <div class="header-right">
+                    <div class="header-right-sub flex flex-justify-right">
+                        <div class="phone">
+                            <a href="tel:+994125975070"> +99412 597 50 70 </a>
+                        </div>
+                        <div class="social">
+                            <ul>
+                                <li class="first"> <a href="#" target="_blank" class="in"> <i
+                                            class="fab fa-instagram"></i> </a> </li>
+                                <li> <a href="#" target="_blank" class="fb"> <i class="fab fa-facebook-f"></i> </a>
+                                </li>
+                                <li> <a href="#" target="_blank" class="ln"> <i class="fab fa-linkedin-in"></i> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="header-menus">
+                        <li class="active"> <a href="index2.html"> Home </a> </li>
+                        <li> <a href="about.html"> About us </a> </li>
+                        <li> <a href="our-destination.html"> Our destination </a> </li>
+                        <li class="dropdown"> <a href="#"> Services </a>
+                            <ul>
+                                <li> <a href="#"> Air ticket </a> </li>
+                                <li> <a href="#"> Insurance </a> </li>
+                                <li> <a href="#"> Visa support </a> </li>
+                                <li> <a href="#"> Hotel booking </a> </li>
+                            </ul>
+                        </li>
+                        <li> <a href="tour.html"> Tours </a> </li>
+                        <li> <a href="gallery.html"> Gallery </a> </li>
+                        <li> <a href="contact.html"> Contact us </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ==== ==== ==== ==== HEADER  end ==== ==== ==== ==== -->
+<!-- ==== ==== ==== ==== Gallery  start ==== ==== ==== ==== -->
+
+<div id="gallery-modal" class="form-modal no-scroll custom-modal-lg" style="display:none">
+    <div class="gallery-cover">
+        <div class="gallery-cover-control">
+            <button type="button" id="gallery-cover-prev"> </button>
+            <button type="button" id="gallery-cover-next"> </button>
+        </div>
+        <img src="assets/image/gallery/slider.jpg" alt="gallery">
+    </div>
+    <ul class="gallery-pager owl-carousel owl-theme">
+        <li> <img src="assets/image/gallery/gl1.jpg" data-id="1"  alt="gallery"> </li>
+        <li> <img src="assets/image/gallery/gl2.jpg" data-id="2" alt="gallery"> </li>
+        <li> <img src="assets/image/gallery/gl3.jpg" data-id="3" alt="gallery"> </li>
+        <li> <img src="assets/image/gallery/gl4.png" data-id="4" alt="gallery"> </li>
+        <li> <img src="assets/image/gallery/gl5.jpg" data-id="5" alt="gallery"> </li>
+    </ul>
+</div>
+<div id="video-modal" class="form-modal no-bg-modal no-scroll custom-modal-lg" style="display:none">
+    <iframe width="920" height="500" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    </iframe>
+</div>
+
+<section class="gallery-section">
+    <div class="container">
+        <div class="row">
+            <div class="mobile-page-header">
+                <h4 class="section-title"> Gallery </h4>
+            </div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="row ">
+            <div class="col-lg-3 col-md-6">
+                <div class=" section-control">
+                    <div class="custom-select-box ">
+                        <select class="form-control">
+                            <option> Country </option>
+                            <option> Azerbaijan </option>
+                            <option> Turkey </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content-nav-block">
+                    <span class="hr-line"></span>
+                    <ul class="content-nav">
+                        <li class="active"> <a href="gallery.html#photo"> Photo </a> </li>
+                        <li> <a href="video.html#video"> Video </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="photo-tab">
+            <div class=" col-lg-3  col-md-6 col-4 anime-move">
+                <div class="gallery-image">
+                    <a href="#gallery-modal" class="call-modal" data-gallery-id="1">
+                        <img src="assets/image/gallery/gl1.jpg" alt="gallery" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-4 anime-move">
+                <div class="gallery-image">
+                    <a href="#gallery-modal" class="call-modal" data-gallery-id="2">
+                        <img src="assets/image/gallery/gl2.jpg" alt="gallery" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-4 anime-move">
+                <div class="gallery-image">
+                    <a href="#gallery-modal" class="call-modal" data-gallery-id="3">
+                        <img src="assets/image/gallery/gl3.jpg" alt="gallery" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-4 anime-move">
+                <div class="gallery-image">
+                    <a href="#gallery-modal" class="call-modal" data-gallery-id="4">
+                        <img src="assets/image/gallery/gl4.png" alt="gallery" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-4 anime-move">
+                <div class="gallery-image">
+                    <a href="#gallery-modal" class="call-modal" data-gallery-id="5">
+                        <img src="assets/image/gallery/gl5.jpg" alt="gallery" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-4 anime-move">
+                <div class="gallery-image">
+                    <a href="#gallery-modal" class="call-modal">
+                        <img src="assets/image/gallery/6.jpg" alt="gallery" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-4 anime-move">
+                <div class="gallery-image">
+                    <a href="#gallery-modal" class="call-modal">
+                        <img src="assets/image/gallery/7.jpg" alt="gallery" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-4 anime-move">
+                <div class="gallery-image">
+                    <a href="#gallery-modal" class="call-modal">
+                        <img src="assets/image/gallery/8.jpg" alt="gallery" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-4 anime-move">
+                <div class="gallery-image">
+                    <a href="#gallery-modal" class="call-modal">
+                        <img src="assets/image/gallery/9.jpg" alt="gallery" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-4 anime-move">
+                <div class="gallery-image">
+                    <a href="#gallery-modal" class="call-modal">
+                        <img src="assets/image/gallery/1.jpg" alt="gallery" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-4 anime-move">
+                <div class="gallery-image">
+                    <a href="#gallery-modal" class="call-modal">
+                        <img src="assets/image/gallery/2.jpg" alt="gallery" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-4 anime-move">
+                <div class="gallery-image">
+                    <a href="#gallery-modal" class="call-modal">
+                        <img src="assets/image/gallery/3.jpg" alt="gallery" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-4 anime-move">
+                <div class="gallery-image">
+                    <a href="#gallery-modal" class="call-modal">
+                        <img src="assets/image/gallery/4.jpg" alt="gallery" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-4 anime-move">
+                <div class="gallery-image">
+                    <a href="#gallery-modal" class="call-modal">
+                        <img src="assets/image/gallery/5.jpg" alt="gallery" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-4 anime-move">
+                <div class="gallery-image">
+                    <a href="#gallery-modal" class="call-modal">
+                        <img src="assets/image/gallery/6.jpg" alt="gallery" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-4 anime-move">
+                <div class="gallery-image">
+                    <a href="#gallery-modal" class="call-modal">
+                        <img src="assets/image/gallery/7.jpg" alt="gallery" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-4 anime-move">
+                <div class="gallery-image">
+                    <a href="#gallery-modal" class="call-modal">
+                        <img src="assets/image/gallery/8.jpg" alt="gallery" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-4 anime-move">
+                <div class="gallery-image">
+                    <a href="#gallery-modal" class="call-modal">
+                        <img src="assets/image/gallery/9.jpg" alt="gallery" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-4 anime-move">
+                <div class="gallery-image">
+                    <a href="#gallery-modal" class="call-modal">
+                        <img src="assets/image/gallery/1.jpg" alt="gallery" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-4 anime-move">
+                <div class="gallery-image">
+                    <a href="#gallery-modal" class="call-modal">
+                        <img src="assets/image/gallery/2.jpg" alt="gallery" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==== ==== ==== ==== Gallery  end ==== ==== ==== ==== -->
+<!-- ==== ==== ==== ==== FOOTER  start ==== ==== ==== ==== -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class=" col-lg-3  col-md-3 d-none d-md-block">
+                <div class="footer-logo">
+                    <a href="index.html"> <img src="assets/css/icons/logo.svg" alt="STart Travel" /> </a>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li class="first"> <a href="#" target="_blank" class="in"> <i class="fab fa-instagram"></i> </a>
+                        </li>
+                        <li> <a href="#" target="_blank" class="fb"> <i class="fab fa-facebook-f"></i> </a> </li>
+                        <li> <a href="#" target="_blank" class="ln"> <i class="fab fa-linkedin-in"></i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="footer-menu">
+                    <span> Menu </span>
+                    <ul>
+                        <li><a href="about.html"> About us </a></li>
+                        <li><a href="tour.html"> Tours </a></li>
+                        <li><a href="#"> Services </a></li>
+                        <li><a href="#"> Privacy policy </a></li>
+                        <li><a href="#"> Online payment </a></li>
+                        <li><a href="contact.html"> Contacts </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+                <div class="footer-menu">
+                    <span> Countries </span>
+                    <ul>
+                        <li><a href="#"> Azerbaijan </a></li>
+                        <li><a href="#"> Hungary </a></li>
+                        <li><a href="#"> Germany </a></li>
+                        <li><a href="#"> France </a></li>
+                        <li><a href="#"> Austria </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <ul class="sponcor">
+                    <li> <img src="assets/css/icons/footer-iata.svg" alt="IATA" /> </li>
+                    <li> <img src="assets/css/icons/footer-aze-con.svg" alt="master" /> </li>
+                    <li>
+                        <small> Accepted cards </small>
+                        <img src="assets/css/icons/footer-visa.svg" alt="visa" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+            Start Travel MMC 2016. Bütün hüquqlar qorunur!
+        </p>
+    </div>
+</footer>
+<!-- ==== ==== ==== ==== FOOTER  end ==== ==== ==== ==== -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD79lfijXfmSZxeSDuH35UZqunZtSJb6NI"></script>
+<script src="assets/js/plugins.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+
+</html>

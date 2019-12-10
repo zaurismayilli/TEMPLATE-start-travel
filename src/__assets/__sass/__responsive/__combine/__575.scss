@@ -1,0 +1,917 @@
+/******** [----- SCREEN 575 -----] *******/
+@media only screen and (min-width: 575px) {
+    .custombox-overlay.for-gallery {
+        @include transition(.3s, ease-in-out);
+        animation:.2s linear rgba-anime-gallery  forwards;
+    }
+
+    aside {
+       &  .sidebar-title,
+        & .scrollable {
+            display: block;
+        }
+
+        & select, .custom-select-box {
+            display: none;
+        }
+    }
+}
+
+
+@media only screen and (max-width: remy(576px)) {
+    .general-info-section .content-nav {
+        overflow: auto;
+        white-space: nowrap;
+       & li {
+            width: 100%;
+            margin-right: remy(30px);
+        }
+    }
+    
+    aside {
+        &  .sidebar-title,
+         & .scrollable {
+             display: none;
+         }
+
+
+         & select {
+            font-family: SegoeUI !important;
+            font-size: $size_s !important;
+            line-height: 1.33 !important;
+            color: $gray_light !important;
+            border:none !important; 
+            width: auto !important;
+            padding-right: remy(38px) !important;
+            padding-left:5px !important;
+            background:url('icons/color-chevron.svg') no-repeat  right 20px top 50%  !important;
+         }
+     }
+
+    .gallery-pager li {
+        border-radius:8px;
+        padding: 2px !important;
+        width: 67px !important;
+        img {
+            border-radius: 8px;
+        }
+    }
+
+    .gallery-pager .owl-nav {
+        display: none !important;
+    }
+
+    .destination-image {
+        height: remy(160px);
+        margin-top: remy(54px);
+    }
+
+    .mobile-toggle-btn {
+        height:40px !important;
+    }
+
+    header {
+        padding: remy(5px) 0;
+    }
+
+    footer {
+        padding-top: remy(14px);
+        .sponcor {
+            width: 100%;
+            align-items: center;
+            display: flex;
+            & li {
+                margin-top: 0;
+
+                width: remy(59px);
+                white-space: nowrap;
+                & small {
+                    font-size: 9px;
+                    margin-bottom: remy(2px);
+                }
+            }
+        }
+
+        .copyright p {
+            min-height: 16px;
+        }
+
+     
+    }
+
+    .footer-menu ul {
+        margin-top: remy(3px);
+    }
+
+
+    footer .footer-menu ul li {
+        margin-bottom: remy(-2px);
+    }
+
+    .footer-menu {
+        margin-bottom: remy(15px);
+    }
+
+    .calculator-result {
+        font-size: remy(28px);
+        margin-top: 0;
+    }
+
+    .custom-select-box select {
+        display: inline-block;
+        color: $gray_light;
+        font-size: $size_s;
+    }
+
+    .calculator-block .form-group {
+        margin-bottom: remy(14px);
+        text-align: center;
+        & select, & input {
+            width: remy(240px);
+            margin: auto;
+            border:none;
+            height: remy(44px) !important;
+        }
+
+        & button {
+            width: remy(240px);
+            margin: auto;
+        }
+    }
+
+    .gallery-cover {
+        margin-bottom: remy(15px);
+    }
+
+    .our-destination-block {
+        .custom-select-box select {
+            font-family: "SegoeUI-Regular" !important;
+        }
+    }
+
+    .gallery-cover-control button {
+        width: remy(20px) !important;
+        height: remy(20px) !important;
+    }
+
+    .currency-section {
+        padding: remy(20px) 0;
+    }
+
+
+    .main-slider {
+        height: 30vh !important;
+         min-height: remy(160px) !important;
+    }
+
+    .slider-text {
+        top: 30px !important;
+        width: remy(260px);
+         transform: translateY(0%) !important;
+       .content {
+         margin-top: 10px !important;
+         margin-bottom: 15px !important;
+         font-size: 11px !important;
+         @include ellipsis(2);
+         }
+         .title {
+             @include ellipsis(1);
+         }
+         .hr-right {
+             border-radius: 5px;
+ 
+ 
+             &:focus,  &:hover  {
+                 background-color: #069bc7;
+                 transform: translate(0,0) !important;
+                 box-shadow: none;
+             }
+         }
+    }
+ 
+
+    .slider-text .content, .tour-location {
+        font-size: remy(9px);
+        background-size: contain;
+    }
+
+    .tour-location{
+        margin-top: 6px;
+        line-height: 1.33;
+        min-height: remy(11px);
+        color: #707070;
+    }
+
+    .plus-icon {
+        background-size: 8%;
+        background-position: left 13px top 50% !important;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        &:focus,
+        &:hover {
+            box-shadow: none !important;
+            transform: translate(0px , 0px) !important;
+            background-color: #069bc7 !important;
+        }
+    }
+
+    .calculator-block {
+        padding-top: remy(30px);
+    }
+
+    .calculator-section {
+        margin-top: remy(18px);
+        padding-bottom: remy(30px);
+    }
+
+    .currency-content ul li span:last-of-type {
+        font-size: $size_m !important;
+    }
+
+    .currency-content {
+        margin-top: remy(30px);
+    }
+
+    .currency-content ul li {
+        margin-bottom: remy(26px);
+    }
+
+    .currency-content ul li span {
+        display: inline-block !important;
+        vertical-align: middle !important;
+    }
+
+    .currency-block, .weather-block {
+        border-radius: remy(5px);
+        padding: remy(20px) remy(15px);
+    }
+
+
+    
+    .section-cover {
+        &:after {
+            background:url('icons/calculator-cover.png') no-repeat center;
+            background-size: cover ;
+        }
+    }
+
+    .calculator-title {
+        margin-bottom: remy(35px);
+    }
+
+    .loading-page:after {
+        background-size: 50%;
+    }
+
+    .weather-content ul li div {
+        width: remy(20px);
+        height: remy(20px);
+    }
+
+    .slider-text .content {
+        margin:remy(20px) 0 remy(10px) 0;
+    }
+
+    .section-title, .title-xl , .destination-container .destination-info .destination-title *,
+    footer .footer-menu span, .slider-text .title , .calculator-title ,
+    .currency-content ul li span:last-of-type, 
+    .weather-content ul li span:last-of-type ,  .currency-section .select-selected,
+    .currency-header button, .currency-content ul li span:last-of-type, .custom-select-box .select-selected{
+        font-size: remy(16px) !important;
+    }
+
+    .weather-content ul li div {
+        margin:remy(15px) 0;
+    }
+
+    
+   .section-header {
+    padding-top: 18px;
+    padding-bottom: 9px;
+}
+
+
+
+    .content-nav li a ,
+    .destination-container .destination-info .destination-content ,
+    footer .footer-menu ul li a,  footer .copyright , .sidebar-title , aside ul li a,
+    .hr-right, .tour-title a, .plus-icon,
+    .weather-content ul li span, .select-items div, .currency-content ul li span, .about-part,
+    .contact-form-block .content, input.form-control, textarea.form-control, .contact-block .form-group label,
+    input::placeholder, textarea::placeholder ,  .btn-success, .form-group > label, .form-modal .select-selected , .counter-block > label,
+    input + .style-radio,
+    .tour-all a 
+    
+     {
+        font-size: remy(12px) !important;
+        line-height: 1.33 !important;
+    }
+
+    .tour-block .tour-title a {
+        margin-top: 5px;
+    }
+
+    .tour-image {
+        border-radius: 5px;
+    }
+
+    .custom-modal-header .close-modal {
+        position: static;
+    }
+
+    .form-modal .form-group img {
+        width: 100%;
+    }
+
+    .custom-modal-header {
+        width: 100%;
+        align-items: center;
+        margin-bottom: remy(15px);
+        justify-content: space-between;
+    }
+
+    .pagination-block {
+        display: none;
+    }
+
+    .gallery-image, .video-image {
+        height: remy(90px);
+    }
+
+    .contact-form-info {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .contact-form-info ul.contact-ul > li:last-of-type {
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    .contact-block button {
+        width: 100%;
+        border-radius: remy(5px);
+    }
+
+    .contact-form-block .title {
+        font-size: remy(21px);
+    }
+
+    .contact-form-block {
+        padding: 0;
+        margin-top: remy(20px);
+    }
+
+    .contact-block {
+        box-shadow: none;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .about-image {
+        height: remy(160px);
+        img {
+            box-shadow: none;
+        }
+    }
+
+    .weather-header  .custom-select-box {
+        text-align: right;
+        select {
+            font-size: $size_m;
+            color: $white;
+            font-family: $Sbold_font;
+            direction: rtl;
+
+            option {
+                background-color: $white;
+                font-size: $size_s;
+                color: #333333;
+            }
+        }
+    }
+
+    .currency-header button {
+        padding-right: remy(26px);
+    }
+
+    .currency-content ul li span:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .currency-content ul li span:nth-child(3n) {
+        margin: 0;
+        padding-right: 0;
+        padding-left: remy(12px);
+    }
+
+    .currency-content ul li span:last-of-type {
+        margin: 0;
+        padding-right: 0;
+    }
+
+    .currency-content ul li span:first-of-type:after {
+        right: remy(-16px);
+    }
+
+    .currency-content ul li span:nth-child(2n):after {
+        display: none;
+    }
+
+    .currency-content ul li span {
+        margin-right: remy(17px);
+    }
+
+    .currency-section  {
+        padding: remy(20px) 0 remy(30px) 0;
+        .select-selected {
+            padding-right: remy(17px);
+        }
+    }
+
+    
+    .weather-content ul li div:after {
+       display: none;
+    }
+
+    .weather-content ul li span sup {
+        top: -5px;
+        left: -4px;
+    }
+
+    .plus-icon {
+        border-radius: remy(5px);
+        padding: remy(8px) remy(9px) remy(9px) remy(27px);
+        background-position: left 8px center;
+    }
+
+    .currency-title, .weather-title {
+        font-size: remy(21px);
+    } 
+
+    .tour-block .tour-content {
+        margin-top: remy(8px);
+    }
+
+    .tour-content + .tour-more {
+        display: none;
+    }
+
+    .tour-block {
+        margin-bottom: remy(20px);
+    }
+    
+    .hr-right {
+        padding-top: remy(8px);
+        padding-bottom: remy(8px);
+    }
+    .content-nav  {
+        margin-bottom: remy(20px);
+        & li a {
+            padding-bottom: remy(10px);
+            color: #aaaaaa;
+        }
+    }
+    
+
+    .gallery-section .col-4 {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+
+    .destination-container .destination-info .destination-content:last-of-type {
+        margin-bottom: remy(20px);
+    }
+
+    .gallery-image, .video-image {
+        margin-bottom: remy(10px);
+    }
+
+    .gallery-section + footer {
+        margin-top: remy(20px);
+    }
+
+    .gallery-section .row:last-of-type {
+        margin-left: remy(-5px);
+        margin-right: remy(-5px);
+    }
+    
+    #gallery-modal, .no-bg-modal {
+        width: remy(272px) !important;
+        .gallery-cover {
+            height: remy(200px) !important;
+        }
+    }
+
+    #gallery-modal iframe, .no-bg-modal iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-control select.form-control {
+        background-image: url('icons/triangle-down.svg');
+    }
+
+    .hr-line {
+        border-bottom: 1px solid $blue;
+    }
+
+    .form-modal {
+        padding: remy(17px);
+
+        .btn-success {
+            width: 100%;
+            border-radius: remy(5px);
+        }
+    }
+
+    #video-modal {
+        height: remy(200px);
+        width: remy(272px);
+    }
+
+    .gallery-pager li {
+        height: remy(60px) !important;
+    }
+
+    #gallery-modal .owl-nav button {
+        height: remy(60px);
+    }
+
+    .destination-image {
+        overflow: hidden;
+        border-radius: remy(5px);
+    }
+
+    .gallery-cover-control {
+        padding: 0 remy(10px);
+        button {
+            background-size: contain !important;
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    .select-selected {
+        height: 44px !important;
+        line-height: 44px !important;
+    }
+
+    .video-image:before {
+        background-size: 50%;
+    }
+
+    .destination-container .destination-image {
+        height: remy(160px);
+    }
+
+    .tour-single-section .tour-location {
+        margin-top: remy(5px);
+        margin-bottom: remy(5px);
+    }
+
+    .tour-single-section .destination-container
+    {
+        .destination-info .destination-title * {
+            font-size: $size_s;
+            margin-bottom: remy(20px);
+        }
+        .title-sm  {
+            font-size: $size_s;
+        }
+
+        .content-ul-block {
+            margin-bottom: remy(20px);
+            ul {
+                margin-top: remy(8px);
+    
+                li {
+                    font-size: $size_s;
+                }
+            }
+
+            article {
+                font-size: $size_s;
+            }
+        }
+
+    }
+
+    .our-destination-block .btn-success {
+        border-radius: remy(5px);
+        display: block;
+    }
+
+    .tour-single-section {
+        .col-4 {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+
+    #photo-tab , #video-tab{
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .transparent-style-select {
+        width: 100%;
+    }
+
+    .calculator-header * {
+        font-size: $size_m;
+    }
+
+    .calculator-content {
+
+        table {
+            border-radius: 0;
+        }
+        table tbody tr td,
+        table thead tr th:nth-child(3n) {
+            font-size: $size_s;
+            padding-left: 15px;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        table thead tr th, .select-selected {
+            font-size: $size_s;
+            padding-left: 15px;
+        }
+
+        button {
+            width: 100%;
+            font-size: $size_s;
+        }
+    }
+
+    #video-tab + .row{
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+
+    .calculator {
+        margin-bottom: remy(30px);
+    }
+
+    .calculator-header {
+        margin-top: remy(40px);
+        margin-bottom: remy(20px);
+    }
+
+
+
+    .about-image {
+        border-radius: remy(5px);
+        overflow: hidden;
+        img {
+            border-radius: 0;
+        }
+    }
+
+    .destination-container .destination-info .destination-title  h4 {
+        font-size: $size_s !important;
+    }
+
+    .about-header .title-xl {
+        font-size: 21px !important;
+    }
+
+    .contact-block .form-group input.form-control {
+        height: remy(44px) !important;
+    }
+
+    .contact-block .content {
+        margin-bottom: remy(30px);
+    }
+
+    .contact-form-block {
+        margin-top: remy(25px);
+    }
+
+    .contact-block button {
+        font-size: $size_m !important;
+        padding-top: 10px !important;
+        padding-bottom: 11px !important;
+        margin-top: remy(4px);
+    }
+
+    .contact-form-info ul.contact-ul li {
+        min-height: remy(20px);
+    }
+
+    footer .footer-menu ul {
+        margin-top: remy(10px);
+        li {
+            margin-bottom: remy(7px);
+             a {
+                display: block;
+            }
+            &::last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .geo-map-section-block {
+        padding-top: remy(15px);
+
+        .geo-map {
+            margin-top: remy(15px);
+        }
+
+        .geo-map-block {
+            margin-bottom: remy(15px);
+        }
+    }
+
+    .copyright {
+        margin-top: remy(30px) !important;
+    }
+
+    .landing-section {
+        display: block;
+        .landing-ul {
+            margin-top: 0% !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            flex-direction: column !important;
+
+            li {
+                margin-right: 0px !important;
+                margin-top: 180px !important;
+            }
+        }
+    }
+
+    .pagination-block {
+        display: block;
+        margin-bottom: remy(30px);
+    }
+
+    .pagination li {
+        margin-right: remy(5px);
+        & a.page-link {
+            font-size: $size_s;
+        }
+
+         &.prev a ,  &.next a{
+            background-size: 43%;
+        }
+    }
+
+    .destination-image {
+        margin-top: remy(21px);
+        border-radius: 5px !important;
+    }
+
+    .our-destination-block .btn-success {
+        font-size: $size_m !important;
+        margin-top: remy(17px);
+    }
+
+    .tour-single-section .destination-container {
+        margin-bottom: remy(40px);
+    }
+
+    .content-ul-block ul li {
+        font-family: $regular_font;
+    }
+
+    .our-destination-block .btn-success {
+        padding-top: remy(10px) !important;
+        padding-bottom: remy(11px) !important;
+    }
+
+    .calculator-content button {
+        font-size: $size_m !important;
+        padding: remy(11px) 0 remy(13px) 0 !important;
+    }
+
+    .tour-single-section {
+        .calculator-header {
+            margin-top: remy(30px);
+            margin-bottom: remy(20px);
+        }
+    }
+
+    .calculator-content table thead tr th select {
+        width: 90px;
+        font-size: $size_s;
+        line-height: 1.33;
+        color: $gray_light;
+        border-bottom: none;
+        padding-bottom: 0;
+        background-size: 8px 5px;
+        background-position: right 4px top 50%;
+    }
+
+    .calculator-content table tbody tr td {
+        color: #707070;
+        height: auto !important;
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+    }
+
+    .calculator-content table tbody tr td.image {
+        padding-right: 0;
+    }
+
+    .calculator-content table thead tr th:nth-child(3n) ,
+    .calculator-content table tbody tr td:nth-child(3n) {
+        text-align: right
+    }
+
+    .calculator-content table tbody tr td img {
+        width: 87%;
+    }
+
+    .calculator-content table thead tr th {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+
+    .calculator-content table tbody tr td.image {
+        min-width: 85px;
+        padding-right: 12px;
+    }
+
+    .padding-0-mb {
+        padding-left:0 !important;
+        padding-right: 0 !important;
+    }
+
+    .calculator .d-hidden-desktop {
+        padding-left: remy(15px);
+        padding-right: remy(15px);
+    }
+
+    .custom-modal-title {
+        font-size: 16px !important;
+    }
+
+    .custom-modal-sm .inline-ul li {
+        margin-bottom: remy(14px);
+    }
+
+    .form-modal .btn-success {
+        font-size: 16px !important;
+        padding-top: 0;
+        padding-bottom: 0;
+    }o
+
+    .custom-modal-body .form-group {
+        margin-bottom: remy(20px);
+    }
+
+    .custom-modal-body {
+        input , button{
+            height: 44px !important;
+        }
+    }
+
+    .custom-modal-header .close-modal {
+        width: 10px;
+        height: 10px;
+        background-size: contain;
+    }
+
+    .custom-modal-lg .inline-ul {
+        flex-wrap: wrap;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
+    .query-success, .query-error {
+        width: remy(56px);
+        height: remy(56px);
+        background-size: contain !important;
+    }
+
+    .query-header-success *, .query-header-error * {
+        font-size: remy(12px);
+            margin-top: remy(10px) !important;
+    }
+
+    .modal-block {
+        padding: remy(20px);
+        padding-bottom: remy(39px);
+        .custom-modal-header {
+            text-align: right;
+            justify-content: flex-end;
+        }
+    }
+
+
+    .query-content {
+        font-size: remy(12px);
+        margin-top: remy(10px);
+    }
+
+}

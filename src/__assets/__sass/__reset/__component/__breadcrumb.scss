@@ -1,0 +1,85 @@
+/******** [----- BreadCrumb -----] *******/
+.breadcrumb {
+    background-color: transparent;
+    padding-top: remy(25px);
+    padding-bottom: remy(25px);
+    margin:0;
+    & li {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $size_m;
+        & a {
+            line-height: 1.33;
+            font-size: $size_s;
+            color: $gray_light;
+            display: block;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &:before {
+            font-size: 12px;
+            color: $gray_light;
+        }
+
+        &.active {
+            &:before {
+                color: $gray_light;
+                font-size: 12px;
+            }
+            line-height: 1.33;
+            font-size: $size_s;
+            color: $gray;
+            font-family: $Sbold_font;
+        }
+    }
+}
+
+.content-nav-block {
+    position: relative;
+}
+
+.content-nav {
+    border-bottom: remy(1px) solid $gray_light_2;
+    margin-bottom: remy(40px);
+    li {
+        display: inline-block;
+        width: 23%;
+        margin-right: 25px;
+        a {
+            padding-bottom: remy(20px);
+            font-size: $size_m;
+            font-family: $Sbold_font;
+            line-height: 1.31;
+            color: $gray;
+            display: block;
+            text-align: center;
+        }
+        &.active,  &:hover, &.active a {
+            a {
+                color: $blue-bold;
+            }
+        }
+    }
+}
+
+.hr-line {
+    border-bottom: remy(2px) solid $blue-bold;
+    display: block;
+    width: 23%;
+    position: absolute;
+    bottom: 0;
+    left: remy(15px);
+    pointer-events: none;
+    @include transition(.3s, ease-in-out);
+}
+
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: 4px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    padding-right: 4px;
+}

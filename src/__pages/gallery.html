@@ -1,0 +1,68 @@
+//= __partial/__header.html
+<!-- ==== ==== ==== ==== Gallery  start ==== ==== ==== ==== -->
+
+<div id="gallery-modal" class="form-modal no-scroll custom-modal-lg" style="display:none">
+    <div class="gallery-cover">
+        <div class="gallery-cover-control">
+            <button type="button" id="gallery-cover-prev"> </button>
+            <button type="button" id="gallery-cover-next"> </button>
+        </div>
+        <img src="assets/image/gallery/slider.jpg" alt="gallery">
+    </div>
+    <ul class="gallery-pager owl-carousel owl-theme">
+        <li> <img src="assets/image/gallery/gl1.jpg" data-id="1"  alt="gallery"> </li>
+        <li> <img src="assets/image/gallery/gl2.jpg" data-id="2" alt="gallery"> </li>
+        <li> <img src="assets/image/gallery/gl3.jpg" data-id="3" alt="gallery"> </li>
+        <li> <img src="assets/image/gallery/gl4.png" data-id="4" alt="gallery"> </li>
+        <li> <img src="assets/image/gallery/gl5.jpg" data-id="5" alt="gallery"> </li>
+    </ul>
+</div>
+<div id="video-modal" class="form-modal no-bg-modal no-scroll custom-modal-lg" style="display:none">
+    <iframe width="920" height="500" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    </iframe>
+</div>
+
+<section class="gallery-section">
+    <div class="container">
+        <div class="row">
+            <div class="mobile-page-header">
+                <h4 class="section-title"> Gallery </h4>
+            </div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="row ">
+            <div class="col-lg-3 col-md-6">
+                <div class=" section-control">
+                    <div class="custom-select-box ">
+                        <select class="form-control">
+                            <option> Country </option>
+                            <option> Azerbaijan </option>
+                            <option> Turkey </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content-nav-block">
+                    <span class="hr-line"></span>
+                    <ul class="content-nav">
+                        <li class="active"> <a href="gallery.html#photo"> Photo </a> </li>
+                        <li> <a href="video.html#video"> Video </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="photo-tab">
+            //= __component/gallery.html
+        </div>
+    </div>
+</section>
+<!-- ==== ==== ==== ==== Gallery  end ==== ==== ==== ==== -->
+//= __partial/__footer.html

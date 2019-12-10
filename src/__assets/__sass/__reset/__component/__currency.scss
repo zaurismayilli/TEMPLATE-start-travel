@@ -1,0 +1,267 @@
+/******** [----- Curreny & Weather -----] *******/
+.currency-section {
+    padding: remy(80px) 0;
+}
+
+.currency, .weather {
+    &-block {
+        border-radius: 10px;
+        background-image: linear-gradient(to right, #f9435e -1%, #fe667d 100%);
+        padding: remy(20px) remy(25px) remy(30px) remy(25px);
+    }
+    &-header {
+        select, button , .select-selected{
+            border: none;
+          
+            appearance: none;
+            font-family: $Sbold_font;
+            line-height: 1.31;
+            font-size: $size_m;
+            color: $white;
+            outline: none;
+            color: $white;
+            cursor: pointer;
+            padding-right: remy(33px);
+            background:url('icons/currency.svg') no-repeat right center;
+            background-color: transparent;
+            input {
+                color: $white;
+                padding-right: remy(15px);
+                border-bottom: 1px solid transparent;
+                height: 100%;
+                @include transition(.2s, ease-in-out);
+                padding-left:remy(12px);
+                &:focus {
+                    border-bottom: 1px solid $white;
+                }
+            }
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .custom-select-box {
+            width: remy(128px);
+        }
+
+        .select-selected {
+            height: remy(36px) !important;
+        }
+    }
+    &-title {
+        font-size: remy(28px);
+        font-family: $Sbold_font;
+        line-height: 1.32;
+        color: $white;
+    }
+    &-content {
+        ul {
+            li {
+                display: block;
+                span:last-of-type {
+                    line-height: 1.33;
+                    font-size: remy(21px);
+                    background-color: transparent;
+                    border: none;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.currency {
+ 
+    &-content {
+        margin-top: remy(38px);
+        ul {
+            li {
+                margin-bottom: remy(25px);
+                span {
+                    color: $blue-bold;
+                    border-radius: remy(5px);
+                    border: solid remy(1px) $white;
+                    font-size: $size_m;
+                    font-family: $Sbold_font;
+                    line-height: 1.31;
+                    background-color: $white;
+                    display: inline-block;
+                    padding: remy(4px) remy(18px);
+                    margin-right: remy(42px);
+                    position: relative;
+                    &:first-of-type:after {
+                        content: "";
+                        background: url(icons/chevron-right-white.svg) no-repeat center;
+                        position: absolute;
+                        right: remy(-28px);
+                        top: 34%;
+                        z-index: 1;
+                        width: remy(9px);
+                        height: remy(9px);
+                    }
+
+                    &:nth-child(2n) {
+                        &:after {
+                            content: "";
+                            background: url(icons/currency-wide.svg) no-repeat center;
+                            position: absolute;
+                            right: remy(-65px);
+                            top:0;
+                            z-index: 1;
+                            width: remy(30px);
+                            height: remy(25px);
+                        }
+                    }
+
+                    &:last-of-type {
+                        margin-left: remy(35px);
+                        display: inline-block;
+                    }
+                }
+
+                &:last-of-type {
+                    margin-bottom: remy(0px);
+                }
+                
+            }
+        }
+    }
+
+    &-block {
+        position: relative;
+        &-loading {
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 4;
+                background: url('icons/currency-skeleton.svg') no-repeat center;
+                background-size: cover;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0px;
+                height: 100%;
+                box-shadow: 0px 0px 30px 5px #fff;
+                z-index: 5;
+                background: transparent;
+                animation: skeletonAnimate 0.4s infinite linear
+            }
+        }
+    }
+}
+
+
+.weather {
+    &-block {
+        position: relative;
+        border-radius: 10px;
+        background: url('icons/weather-skeleton.svg') no-repeat center;
+        background-image: linear-gradient(to left, #36c2ff, #009ee3);
+        &-loading {
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                background: url('icons/weather-skeleton.svg') no-repeat center;
+                background-size: cover;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0px;
+                height: 100%;
+                box-shadow: 0px 0px 30px 5px #fff;
+                z-index: 1;
+                background: transparent;
+                animation: skeletonAnimate 0.4s infinite linear
+            }
+        }
+    }
+   
+    &-header {
+        select, .select-selected {
+            background:url('icons/chevron-white.svg') no-repeat right top 50%;
+            padding-right: remy(20px);
+            text-align: right;
+        }
+    }
+    &-content {
+        margin-top: remy(34px);
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 0  remy(24px) 0 remy(23px);
+            li {
+                div {
+                    width: remy(27px);
+                    height: remy(27px);
+                    margin:remy(13px) 0;
+                    position: relative;
+                    img {
+                        @include full-image-contain;
+                    }
+                    &:after {
+                        content:"";
+                        position: absolute;
+                        background: $white;
+                        right: remy(-22px);
+                        top: 0;
+                        height: 100%;
+                        width: remy(1px);
+                        pointer-events: none;
+                    }
+                }
+                display: inline-block;
+                vertical-align: top;
+                span {
+                    display: block;
+                    font-size: $size_m;
+                    line-height: 1.31 !important;
+                    color: $white;
+                    text-align: center;
+                    sup {
+
+                        font-size: remy(9px);
+                        left: (-5px);
+                        position: relative;
+                        top: remy(-7px);
+                    }
+                }
+
+                &:last-of-type div:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@keyframes skeletonAnimate {
+    0% {
+
+       left:0;
+    }
+  
+  40% {
+
+    left:40%;
+  }
+
+  100% {
+
+    left:100%;
+}
+}

@@ -1,0 +1,494 @@
+/******** [----- SCREEN 992 -----] *******/
+@media only screen and (min-width: 992px) {
+    
+    .d-hidden-desktop  {
+        display: none;
+    }
+
+    .mobile-menu-container {
+        display: none;
+    }
+
+
+    .mobile-toggle-btn {
+        display: none;
+    }
+    
+}
+
+html {
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: remy(992px)) {
+
+    header + *,  header + * + *, header + * + * + * {
+        transition: 0.4s ease-out;
+        transform: translateX(0%) translateY(0%);
+    }
+
+
+    
+    @-ms-keyframes mobile-anime {
+        0% {
+            transform: translateX(0%) translateY(0%);
+        }
+
+        100% {
+            transform: translateX(50%) translateY(0%);
+        }
+    }
+
+    @-o-keyframes mobile-anime {
+        0% {
+            transform: translateX(0%) translateY(0%);
+        }
+
+        100% {
+            transform: translateX(50%) translateY(0%);
+        }
+    }
+
+    @-moz-keyframes mobile-anime {
+        0% {
+            transform: translateX(0%) translateY(0%);
+        }
+
+        100% {
+            transform: translateX(50%) translateY(0%);
+        }
+    }
+
+
+    @keyframes mobile-anime {
+        0% {
+            transform: translateX(0%) translateY(0%);
+        }
+
+        100% {
+            transform: translateX(50%) translateY(0%);
+        }
+    }
+
+    @keyframes dspAnime {
+        0% {
+            display: block;
+            opacity: 0;
+        }
+
+        1% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes dspAnime {
+        0% {
+            display: block;
+            opacity: 0;
+        }
+
+        1% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    
+    body.mobile-active {
+        overflow: hidden !important;
+        .mobile-menu-container {
+            transform: translateX(0%);
+        }
+
+        & .header-menus  li.dropdown:hover::after {
+            top: 10% !important;
+        }
+
+        
+        & header + *,  & header + * + *, & header + * + * + * {
+            opacity: 0.4;
+        }
+
+        & header .mobile-toggle-btn {
+            left: calc(75% + 12px);
+        }
+    }
+   header {
+       padding: remy(10px) 0;
+       @include transition(.4s, ease-in-out);
+       box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+       .header-right {
+           display: none;
+       }
+       .mobile-menu-container {
+           display: block !important;
+           transform: translateX(-120%);
+           transition: 0.3s ease-in-out;
+          
+       }
+       .mobile-toggle-btn {
+            width: 15px;
+            height: 50px;
+            background: url('icons/menu.svg') no-repeat center;
+            position: absolute;
+            left: 15px;
+            top: 0px;
+            @include transition(.3s, ease-in-out);
+       }
+
+       .mobile-menu-container {
+           display: none;
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 75%;
+           height: 100%;
+           background: $blue;
+           z-index: 6;
+           overflow: auto;
+           box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.16);
+           padding: remy(40px);
+           
+            & .header-menus {
+                margin-bottom: remy(20px);
+                padding-bottom: remy(5px);
+                position: relative;
+                &:after {
+                    content:"";
+                    position: absolute;
+                    bottom: 0;
+                    width: remy(100px);
+                    margin: auto;
+                    left: 0;
+                    right: 0;
+                    height: 1px;
+                    background:#cccccc;
+                }
+                & > li {
+                    display: block;
+                    margin-bottom: remy(20px);
+                    margin-left: 0;
+                    margin-right: 0;
+                    margin-top: 0;
+                    text-align: center;
+                    & > a {
+                        display: inline-block;
+                        font-size: $size_m;
+                        line-height: 1.31;
+                        letter-spacing: 0.24px;
+                        font-family: $regular_font;
+                        color: $white;
+                        text-align: center;
+                     
+
+                        & + ul {
+                            padding-top: 0;
+                            position: static;
+                            display: none;
+                            opacity: 1;
+                            visibility: visible;
+                            text-align: center;
+                            margin: auto;
+                            transition: 0s;
+                            margin-top: remy(8px);
+                            & li {
+                                background: transparent;
+                                box-shadow: none;
+                                padding: 0;
+                                margin-bottom: remy(9px);
+                                & a {
+                                    background: transparent;
+                                    padding: 0;
+                                    color: #5edaff;
+                                    font-size: $size_s;
+                                    line-height: 1.33;
+                                    letter-spacing: 0.18px;
+                                    box-shadow: none;
+                                }
+                                &:last-of-type {
+                                    margin-bottom: 0px;
+                                }
+                            }
+
+                           
+                        }
+                    }
+
+                    &.dropdown::after {
+                        background: url('icons/chevron-white.svg') no-repeat center;
+                        display: none;
+                    }
+
+                    &.dropdown {
+                      //  margin-bottom: 8px !important;
+                       & > a {
+                            position: relative;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                top: 2px;
+                                left: calc(100% - -2px);
+                                width: 20px;
+                                height: 20px;
+                                background: url('icons/chevron-white.svg') no-repeat center;
+                            }
+                        }
+                        & > a {
+                            position: relative;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                top: 2px;
+                                left: calc(100% - -2px);
+                                width: 20px;
+                                height: 20px;
+                                background: url('icons/chevron-white.svg') no-repeat center;
+                            }
+                        }
+                    }
+                }
+            }
+
+            
+
+            .phone {
+                text-align: center;
+                a{
+                    color: $white;
+                    font-size: $size_s;
+                    background: url(icons/phone-mini-white.svg) no-repeat left 0px center;
+                }
+            }
+
+            .social {
+                margin-top: remy(24px);
+            }
+
+            .social {
+                text-align: center;
+                ul li {
+                    margin-left: remy(26px);
+                    a {
+                        color: $white;
+                        font-size: remy(13px);
+                    }
+                }
+                }
+
+            .mob-toggle-btn {
+                text-align: center;
+                margin-top: remy(72px);
+                button {
+                    width: remy(40px);
+                    height: remy(40px);
+                    background: url('icons/menu-close.svg') no-repeat center;
+                    border-radius: 50%;
+                }
+            }
+       }
+
+       * {
+           .flex.flex-space-between {
+               justify-content: center;
+           }
+       }
+       .header-logo {
+           width: remy(42px);
+           height: remy( 30px);
+       }
+   }
+
+   .main-slider .slider-controls {
+       width: auto;
+   }
+
+   .currency-block {
+       margin-bottom: remy(20px);
+   }
+
+   .about-row .about-image:after {
+       display: none;
+   }
+
+   .about-row, .about-row:nth-child(even) , .about-row:last-of-type{
+       margin-top: 0;
+       margin-bottom: 0;
+   }
+
+   .about-row:nth-child(even) .about-header {
+       margin-top: remy(20px);
+       margin-bottom: remy(10px);
+   }
+
+   .about-header + * {
+       margin-top: 0 !important;
+   }
+
+   .about-content {
+       margin-top: remy(30px);
+   }
+
+   .about-image {
+       width: 100%;
+   }
+
+   .calculator-section {
+       padding-bottom: remy(50px);
+       height: auto;
+   }
+
+   .breadcrumb {
+       padding-top: remy(15px);
+       padding-bottom: remy(15px);
+   }
+
+   .gallery-section, .tour-single-section {
+       .content-nav {
+           display: flex;
+           justify-content: space-between;
+           width: 100%;
+           li {
+            width: 48%;
+            margin-right: 0;
+        }
+       }
+   }
+
+   .contact-block {
+       flex-direction: column-reverse;
+   }
+
+   .contact-form-info {
+        position: static;
+        padding-bottom: 0;
+        background-color: transparent;
+        & ul.contact-ul > li, & ul.contact-ul > li  a {
+            color: $gray;
+            
+        }
+        ul.contact-ul li.address {
+            background: url('icons/map-marker-blue.svg') no-repeat left 0 top 6px;
+        }
+        ul.contact-ul li.email {
+            background: url('icons/email-outline-blue.svg') no-repeat left 0 top 6px;
+        }
+        ul.contact-ul li.phone {
+            background: url('icons/phone-blue.svg') no-repeat left 0 top 6px;
+        }
+
+        .social li
+        {
+            a.in {
+                color: $pink;
+            }  
+            a.fb {
+                color: $fb;
+            }  
+            a.ln {
+                color: $ln;
+            }  
+        }
+
+        .title {
+            display: none;
+        }
+   }
+
+   .contact-form-block {
+       padding-bottom: 0;
+   }
+
+   .contact-map-section {
+       height: remy(240px);
+       margin-top: remy(40px);
+       top: 0;
+       position: static;
+   }
+   
+   .pagination-block {
+       margin-top: 0;
+       margin-bottom: remy(50px);
+   }
+
+   #gallery-modal, .no-bg-modal {
+       width: 90vw !important;
+
+       iframe {
+           width: 100%;
+       }
+   }
+
+   .general-info-section {
+       .content-nav {
+           display: flex;
+           justify-content: space-between;
+
+           & li {
+               width: 33.3%;
+               margin-right: 0;
+           }
+       }
+
+       .sidebar-title {
+           background:transparent url("icons/select-chevron.svg") no-repeat right 20px top 50%;
+           color: $gray_light;
+       }
+
+       .sidebar-title + ul {
+           height: 0;
+           margin-top: remy(3px);
+           margin-left: remy(3px);
+           @include transition(.2s, ease-in-out);
+       }
+
+       aside {
+           background: transparent;
+           position: relative;
+           ul {
+               background: $white;
+               &.height {
+                   height: remy(150px);
+               }
+           }
+       }
+
+       .our-destination-block {
+           position: relative;
+       }
+
+       .destination-container .destination-image {
+           margin-top: remy(51px);
+       }
+
+       .our-destination-block {
+           position: relative;
+           .col-lg-3 {
+               position: absolute;
+               top: 0;
+               z-index: 2;
+           }
+       }
+   }
+   .mini-tour {
+       height: remy(170px);
+   }
+
+   .d-hidden-md {
+       display: none;
+   }
+
+   .table-button {
+       margin-top: remy(20px);
+   }
+
+   .d-hidden-desktop  {
+    display: block;
+    }
+}

@@ -1,0 +1,88 @@
+/******** [----- FOOTER -----] *******/
+footer {
+    padding: remy(34px) 0 0 0;
+    border-top:remy(1px) solid $gray_light_3;
+    .footer {
+        &-logo {
+            width: remy(120px);
+            height: remy(97px);
+    
+            a {
+                @include full-block;
+                img {
+                    @include full-image-contain;
+                }
+            }
+        }
+
+        &-menu {
+            span {
+                font-size: remy(21px);
+                color: $dark_light;
+                line-height: 1.33;
+                font-family: $Sbold_font;
+                display: block;
+            }
+    
+            ul {
+                margin-top: remy(20px);
+                li {
+                    @include full-block;
+                    margin-bottom: remy(8px);
+                    a {
+                        line-height: 1.31;
+                        display: inline-block;
+                        color: $dark_light;
+                        font-size: $size_m;
+                        @include transition(.2s, ease);
+                        &:hover {
+                            color: #01a1d1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .social {
+        margin-top: remy(37px);
+    }
+    .copyright {
+        background: $blue-bold;
+        text-align: center;
+        font-size: $size_m;
+        color: $white;
+        line-height: 1.31;
+        padding: remy(15px) 0;
+        margin-top: remy(27px);
+        p {
+            display: inline-block;
+            padding-inline-start: remy(22px);
+            background:url('icons/copyright.svg') no-repeat left center;
+        }
+    }
+    
+    .sponcor {
+        margin-top: remy(8px);
+        li {
+            margin-right: remy(39px);
+            display: inline-block;
+            margin-top: remy(41px);
+            a {
+                @include full-block;
+            }
+    
+            img {
+                @include full-block;
+            }
+    
+            small {
+                font-size: $size_s;
+                line-height: 1.33;
+                color: $dark_light;
+                display: block;
+                margin-bottom: remy(12px);
+            }
+        }
+    }
+}

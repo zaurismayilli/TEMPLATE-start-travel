@@ -1,0 +1,148 @@
+/******** [----- DESKTOP -----] *******/
+body {
+    font-family: $regular-font;
+    font-size: remy(16px);
+    overflow-x: hidden;
+    //@include transition(.2s, ease-in-out);
+}
+
+.title-xl {
+    font-size: $size-xxl;
+    font-family: $Sbold_font;
+    color: $blue-bold;
+}
+
+.calendar-block {
+    position: relative !important;
+}
+
+
+.plus-icon {
+    font-size: $size_m;
+    font-family: $Sbold_font;
+    line-height: 1.31;
+    color: $white;
+    display: inline-block;
+    padding: remy(14px) remy(25px) remy(14px) remy(50px);
+    text-align: center;
+    white-space: nowrap;
+    border-radius: remy(10px);
+    background:url('icons/plus.svg') no-repeat left 28px center;
+    background-color:$blue-bold;
+    border:remy(1px) solid transparent;
+    @include transition(.2s, ease-in-out);
+    &:hover {
+        color: $white;
+        box-shadow: 0 6px 12px 0 rgba(1, 161, 209, 0.20) !important;
+    }
+}
+
+.section-header {
+    text-align: center;
+    padding: remy(62px) 0 remy(61px) 0;
+}
+
+.section-title {
+    font-size: $size-xl;
+    line-height: 1.34;
+    color: $blue-bold;
+    font-family: $Sbold_font;
+}
+
+.more {
+    letter-spacing: remy(0.24px);
+    font-size: $size-m;
+    font-family: $Sbold-font;
+    color: $blue-bold;
+    margin-top: remy(1px);
+    display: inline-block;
+    &:hover {
+        text-decoration: underline;
+        color: $blue-bold;
+    }
+}
+
+.loading-page {
+    @include fixed;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    transition: 1s;
+}
+
+.loading-page:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $white;
+    z-index: 5;
+}
+
+.loading-page:after {
+    content: "";
+    position: absolute;
+    background: $white url('icons/loading-full.svg') no-repeat center;
+    z-index: 8;
+    background-size: 100%;
+    width: remy(100px);
+    height: remy(100px);
+    animation:1s linear loading-page infinite forwards;
+}
+
+
+
+@-o-keyframes loading-page {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes loading-page {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes loading-page {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading-page {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.landing-ul {
+    margin-top: 7%;
+}
+
+.colorbox-modal-l {
+    padding: 100px;
+    background-color: #fff;
+}

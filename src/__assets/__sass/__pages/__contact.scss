@@ -1,0 +1,130 @@
+/******** [----- CONTACT -----] *******/
+.contact-block {
+    border-radius: remy(10px);
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.16);
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+    background: $white;
+    margin-top: remy(37px);
+    textarea.form-control {
+        height: remy(104px) !important;
+        resize: none;
+    }
+
+    .form-group {
+        margin-bottom: remy(20px);
+
+        label {
+            font-size: $size_s;
+        }
+
+        .form-control {
+            font-family: $Sbold_font;
+        }
+
+        .form-control::placeholder {
+            font-family: $regular_font;
+        }
+    }
+
+    button {
+        min-width: remy(160px);
+        border-radius: remy(10px);
+    }
+}
+
+.contact-form-block {
+    padding:remy(43px) remy(45px) remy(60px) remy(33px);
+
+    .title {
+        font-size: remy(28px);
+        line-height: 1.32;
+        font-family: $Sbold_font;
+        font-weight: bold;
+        color: $blue-bold;
+        margin-bottom: remy(11px);
+    }
+
+    .content {
+        font-size: $size_m;
+        line-height: 1.38;
+        color: $gray;
+        margin-bottom: remy(23px);
+    }
+}
+
+.contact-form-info {
+    width: remy(285px);
+    border-radius: 10px;
+    background-color: $blue;
+    position: absolute;
+    top: 16%;
+    right: 76%;
+    z-index: 1;
+    padding: remy(26px) remy(31px) remy(60px) remy(31px);
+    .title {
+        font-family: $Sbold_font;
+        font-size: remy(21px);
+        line-height: 1.33;
+        color: $white;
+        margin-bottom: remy(34px);
+    }
+
+    ul.contact-ul {
+        &  > li, &  > li a {
+            font-size: $size_m;
+            line-height: 1.31;
+            color: $white;
+            display: block;
+        }
+
+        & > li {
+            margin-bottom: remy(30px);
+            padding-left: 45px;
+        }
+
+
+        .social {
+            margin-top: remy(40px);
+        }
+    }
+}
+
+ul.contact-ul {
+    li.address {
+        background: url('icons/map-marker-white.svg') no-repeat left 0 top 6px;
+    }
+
+    li.email {
+        background: url('icons/email-outline-white.svg') no-repeat left 0 top 50%;
+    }
+
+    li.phone {
+        & a {
+            background: none; 
+            padding: 0;
+        }
+        background: url('icons/phone-white.svg') no-repeat left 0 top 6px;
+    }
+
+    li {
+        a {
+            @include transition (.2s, ease-in-out);
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+}
+
+.contact-map-section {
+    height: remy(440px);
+    position: relative;
+    top: remy(-40px);
+    .contact-map {
+        height: 100%;
+        background: $blue-bold;
+    }
+}

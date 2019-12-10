@@ -1,0 +1,62 @@
+/******** [----- Pagination -----] *******/
+.pagination-block {
+    text-align: center;
+    display: flex;
+    margin-top: remy(50px);
+    margin-bottom: remy(100px);
+    justify-content: center;
+}
+
+.pagination {
+    & li {
+        line-height: 1.31;
+        font-size: $size_m;
+        font-family: $Sbold_font;
+        color: $gray;
+        margin-right: remy(17px);
+        & a.page-link{
+            border: none;
+            line-height: 1.31;
+            font-size: $size_m;
+            font-family: $Sbold_font;
+            color: $gray;
+            display: block;
+            min-width: remy(26px);
+            min-height: remy(26px);
+            line-height: remy(26px);
+            padding: 0;
+            border-radius: 50%;
+            &:hover, &:focus {
+                background-position: center;
+                background-color: $blue-bold;
+                color: $white;
+                box-shadow: none;
+            }
+        }
+
+        &.active {
+            a.page-link {
+                border: none;
+                background-position: center;
+                background-color: $blue-bold;
+                color: $white;
+            }
+        }
+
+        &.prev a {
+            background:url('icons/arrow-left.svg') no-repeat center;
+            &:hover,  &:focus {
+                background-color: transparent;
+                opacity: .8;
+            }
+        }
+        
+        &.next a {
+            background:url('icons/arrow-right.svg') no-repeat center;
+            &:hover,  &:focus {
+                background-color: transparent;
+                opacity: .8;
+            }
+        }
+    }
+}

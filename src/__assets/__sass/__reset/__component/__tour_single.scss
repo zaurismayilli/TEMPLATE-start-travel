@@ -1,0 +1,165 @@
+/******** [----- Tour Single -----] *******/
+.tour-single-section {
+    .destination-image {
+        border-radius: remy(10px);
+
+    }
+
+    .destination-container .destination-info .destination-title {
+        padding: 0;
+    }
+
+    .destination-container .destination-info .destination-title * {
+        font-family: $Sbold_font ;
+        font-size: 21px ;
+        line-height: 1.33 ;
+        color: $dark_light ;
+        margin: 0 0 remy(35px) 0 ;
+    }
+
+    .tour-location {
+        margin-top: remy(25px);
+        margin-bottom: remy(18px);
+    }
+
+    .destination-container {
+        margin-bottom: remy(60px);
+    }
+}
+
+
+.title-sm {
+    font-family: $Sbold_font ;
+    font-size: 21px ;
+    line-height: 1.33 ;
+    color: $dark_light ;
+    margin: 0 ;
+}
+
+.content-ul-block {
+    margin-bottom: remy(120px);
+    & article {
+        font-family: $Sbold_font;
+        font-size: $size_m;
+        line-height: 1.69;
+        color: $dark_light;
+        margin-top: remy(24px);
+    }
+
+    & ul {
+        margin-top: remy(25px);
+        & li {
+            font-family: $Sbold_font;
+            font-size: $size_m;
+            line-height: 1.69;
+            color: $dark_light;
+            display: block;
+        }
+    }
+}
+
+.mini-tour {
+    height: remy(125px);
+}
+
+
+.calculator {
+    margin-bottom: remy(90px);
+    &-header {
+        text-align: center;
+        margin:remy(50px) 0 remy(44px) 0;
+        * {
+            font-family: $Sbold_font;
+            font-size: remy(35px);
+            line-height: 1.34;
+            color: #01a1d1;
+        }
+    }
+
+    &-content {
+        table {
+            width: 100%;
+            border-radius: 10px;
+            background: #f8f8f8;
+            thead {
+            
+                tr {
+
+                    th {
+                        padding: remy(20px) remy(18px) remy(20px) remy(30px);
+                        font-family: $Sbold_font;
+                        font-size: remy(21px);
+                        vertical-align: middle;
+                        line-height: 1.33;
+                        color: $dark_light;
+                        select {
+                            font-size: 16px;
+                            line-height: 1.31;
+                            color: $gray_light;
+                            border:none;
+                            outline: none;
+                            padding-bottom: remy(10px);
+                            padding-right: remy(20px);
+                            border-bottom: 1px solid $gray_light_2;
+                            appearance: none;
+                            width: remy(255px);
+                            background:url('icons/select-chevron.svg') no-repeat right 0 top 50%;
+                        }
+
+                        &:nth-child(3n),
+                        &:nth-child(2n),
+                        &:nth-child(4n) {
+                            font-size: $size_m;
+                        }
+
+                        &:nth-child(4n) {
+                            text-align: right;
+                        }
+                    }
+
+                   
+                }
+            }
+
+            tbody {
+                background: $white;
+                tr {
+                    td {
+                        font-family: $Sbold_font;
+                        font-size: $size_m;
+                        line-height: 1;
+                        vertical-align: middle;
+                        color: $dark_light;
+                        height: remy(78px);
+                        padding: remy(20px) remy(18px) remy(20px) remy(30px);
+                        img {
+                            @include full-image-contain;
+                            object-position: left;
+                        }
+
+                        &.image {
+                            height: 2.375rem;
+                            width: 13rem;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                        }
+                    }
+
+                    &:nth-child(even) {
+                        background: #fcfcfc;
+                    }
+                }
+            }
+        }
+
+        button {
+            border-radius: remy(5px);
+            background-color: #01a1d1;
+            font-family: $Sbold_font;
+            font-size: $size_m;
+            line-height: 1.31;
+            color: $white;
+            padding: remy(10px) remy(38px);
+        }
+    }
+}

@@ -1,0 +1,74 @@
+//= __partial/__header.html
+<!-- ==== ==== ==== ==== Modal  start ==== ==== ==== ==== -->
+<div style="display: none;">
+    <div class="modal-block" id="has-success">
+        <div class="custom-modal-header">
+            <button type="button" class="close-modal">X </button>
+        </div>
+        <span class="query-success"> </span>
+        <div class="query-header-success">
+            <h3> Well done </h3>
+        </div>
+        <div class="query-content">
+            <p>
+                Now we can go further.
+                Few more steps
+            </p>
+        </div>
+    </div>
+</div>
+
+<div style="display: none;">
+    <div class="modal-block" id="has-error">
+        <div class="custom-modal-header">
+            <button type="button" class="close-modal">X </button>
+        </div>
+        <span class="query-error"> </span>
+        <div class="query-header-error">
+            <h3> Ooops </h3>
+        </div>
+        <div class="query-content">
+            <p>
+                Something went wrong. Let's try
+                one more again
+            </p>
+        </div>
+    </div>
+</div>
+<section class="tour-section">
+    <div class="container">
+        <div class="row">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#has-error" width="500px" height="75%"
+                            class="call-colorbox">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#has-success" width="500px" height="75%"  class="call-colorbox" >Tours</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Azerbaijan</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="row">
+            //= __component/tour.html
+            //= __component/tour.html
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="pagination-block">
+                    <ul class="pagination">
+                        <li class="page-item prev"><a class="page-link call-colorbox "  width="500px" height="75%" href="#has-error"></a></li>
+                        <li class="page-item"><a class="page-link call-colorbox" width="500px" height="75%" href="#has-success">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item">...</li>
+                        <li class="page-item"><a class="page-link" href="#">9</a></li>
+                        <li class="page-item next"><a class="page-link" href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==== ==== ==== ==== Modal  end ==== ==== ==== ==== -->
+//= __partial/__footer.html

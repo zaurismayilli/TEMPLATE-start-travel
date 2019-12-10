@@ -1,0 +1,52 @@
+{
+    "city": {
+        "name": "Baku",
+        "country": "Az",
+        "iso2": "Az",
+        "list": [
+            {
+                "main": "sun",
+                "icon": "sun.svg",
+                "deg": 28,
+                "day":1
+            },
+            {
+                "main": "cloud-rain",
+                "icon": "storm2.svg",
+                "deg": 12,
+                "day":2
+            },
+            {
+                "main": "cloud",
+                "icon": "storm.svg",
+                "deg": 3,
+                "day":3
+            },
+            {
+                "main": "snow",
+                "icon": "snowflake.svg",
+                "deg": -3,
+                "day":4
+            },
+            {
+                "main": "cloud",
+                "icon": "storm.svg",
+                "deg": -8,
+                "day":5
+            },
+            {
+                "main": "lighting",
+                "icon": "storm3.svg",
+                "deg": -2,
+                "day":6
+            },
+            {
+                "main": "sun",
+                "icon": "sun.svg",
+                "deg": 10,
+                "day":7
+            }
+        ]
+    }
+   
+}

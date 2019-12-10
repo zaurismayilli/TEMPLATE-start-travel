@@ -1,0 +1,152 @@
+/******** [----- SCREEN 768 -----] *******/
+@media only screen and (min-width: 768px) {
+    .mobile-page-header {
+        display: none;
+    }
+
+    .section-header.inline-comp {
+        .tour-all {
+         display: none;
+         }
+     }
+}
+
+@media only screen and (max-width: remy(768px)) {
+    .title {
+        font-size: remy(30px);
+    }
+
+    .slider-controls button {
+        display: none !important;
+    }
+
+    .slider-text {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .main-slider {
+        height: 75vh;
+    }
+
+    .hr-right {
+        background-position: right remy(20px) top 50%;
+        padding: remy(5px) remy(42px) remy(5px) remy(26px) ;
+        font-size: $size_s;
+    }
+
+    .section-header {
+        padding-top: remy(20px);
+        padding-bottom: remy(10px);
+    }
+
+    .section-header.inline-comp {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       .tour-all {
+        display: block;
+            a {
+                background-image: none;
+            }
+        }
+    }
+
+    .tour-image {
+        height: remy(160px);
+    }
+
+    .tour-all {
+        display: none;
+    }
+
+    .section-title, .title-xl {
+        font-size: remy(28px);
+    }
+
+    .tour-title a {
+        height: auto;
+    }
+
+    .geo-content *:nth-child(2n) {
+        margin-top: remy(25px);
+    }
+
+    .content-nav li a {
+        font-size: remy(14px);
+    }
+
+    .section-control {
+        margin-bottom: remy(30px);
+    }
+
+    .content-nav {
+        margin-bottom: remy(30px);
+        border-bottom: 1px solid transparent;
+    }
+
+    .destination-container .destination-image {
+        height: remy(300px);
+    }
+
+    footer .sponcor li {
+        margin-top: 0;
+    }
+
+    .destination-container .destination-info .destination-content {
+        margin-bottom: remy(10px);
+    }
+
+    .destination-container .destination-info .destination-title {
+        padding-top: remy(19px);
+        padding-bottom: remy(16px);
+    }
+
+    .geo-map {
+        img {
+            width: 100%;
+        }
+    }
+
+    .breadcrumb {
+        display: none;
+    }
+
+    .mobile-page-header {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: remy(15px) 0;
+    }
+
+    .geo-content {
+        transform: translateY(-50%);
+        top: 50%;
+    }
+
+    .landing-ul li a:after {
+        width: remy(100px);
+        bottom: calc(100%  + 20px);
+
+        height: remy(100px);
+        
+    }
+
+    .landing-ul li a:before {
+        left: 33.5px;
+        bottom: calc(96% + 24px);
+        width: remy(100px);
+        height: remy(100px);
+    }
+
+    .landing-ul li a {
+        font-family: $Sbold_font;
+        font-size: $size_m;
+        line-height: 1.31;
+        color: #01a1d1;
+    }
+
+    .pagination {
+        justify-content: center;
+    }
+}

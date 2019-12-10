@@ -1,0 +1,41 @@
+/******** [----- Geo-Map -----] *******/
+.geo-content {
+    position: absolute;
+    left: 0;
+    top: remy(102px);
+    right: 0;
+    margin: auto;
+    text-align: center;
+    *:nth-child(2n) {
+        margin-top: remy(63px);
+    }
+}
+
+.geo-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: remy(3px);
+    position: relative;
+   img {
+       opacity: 0.2;
+   }
+}
+
+.geo-map-section-block {
+    .section-control {
+        margin-bottom: 0;
+    }
+}
+
+.geo-map-block {
+    .geo-map {
+        padding-top: 0;
+    }
+    margin-bottom: remy(63px);
+}
+
+a[rel=noopener], .gmnoprint, .gm-style-cc, .gm-control-active.gm-fullscreen-control {
+    display: none !important;
+}

@@ -1,0 +1,143 @@
+/******** [----- HEADER -----] *******/
+header {
+    padding:remy(20px) 0;
+     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+     position: relative;
+    .header {
+        &-logo {
+            width: remy(99px);
+            height: remy(89px);
+            a {
+               @include full-block;
+               img {
+                   @include full-image-contain;
+               }
+            }
+        }
+        &-menus {
+            margin-top: remy(-4px);
+            & > li {
+                margin-left: remy(57px);
+                position: relative;
+                & > a {
+                    color: $dark_light;
+                    font-family: $Sbold_font;
+                }
+                &:hover >  a,&.active > a, &:focus  > a {
+                    color: $blue-bold;
+                }
+                
+                & > ul {
+                    position: absolute;
+                    visibility: hidden;
+                    opacity: 0;
+                    z-index: 4;
+                    padding-top: 25px;
+                    width: remy(175px);
+                    @include transition (.2s, ease-in-out);
+                    transform: translate(0, 5px);
+                   & li {
+                       display: block;
+                       background: $white;
+                       -webkit-box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.16);
+                       box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.16);
+                        a {
+                        font-size: $size_m;
+                        line-height: 1.31;
+                        color: $gray;
+                        display: block;
+                        padding:remy(12px) remy(20px);
+                        @include transition(.2s, ease-in-out);
+                       }
+                       &:last-of-type {
+                        border-bottom-left-radius: remy(5px);
+                        border-bottom-right-radius: remy(5px);
+                       }
+                   }
+                }
+
+                &.dropdown {
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        right: remy(-16px);
+                        z-index: 1;
+                        top: remy(12px);
+                        cursor: pointer;
+                        width: remy(8px);
+                        height: remy(5px);
+                        background:url('icons/chevron.svg') no-repeat center;
+                    }
+                    &:hover:after {
+                        background:url('icons/chevron-hover.svg') no-repeat center;
+                    }
+
+                    &:hover > ul {
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translate(0, 0);
+                    }
+                }
+
+                &:first-of-type {
+                    margin-left:0
+                }
+            }
+        }
+        &-right {
+            &-sub {
+                text-align: right;
+                margin-bottom: remy(26px);
+                position: relative;
+                top: -12px;
+                .phone {
+                    margin-right:remy(30px);
+                    padding-right: remy(30px);
+                    font-family: $Sbold_font;
+                    line-height: 1;
+                    border-right:remy(1px) solid $gray_light;
+                }
+            }
+        }
+    }
+}
+
+.dropdown ul li a:hover {
+    color: #01a1d1;
+}
+
+.phone {
+    & a {
+        color: $gray;
+        display: inline-block;
+        padding-left: remy(22px);
+        background: url('icons/phone.svg') no-repeat left 0px center;
+        @include transition(.2s, ease-in-out);
+        &:hover {
+            background: url('icons/phone-hover.svg') no-repeat left 0px center;
+            color: $blue-bold;
+        }
+    }
+}
+
+.social {
+    & ul {
+        & li {
+            margin-left: remy(26px);
+            a {
+                &:hover {
+                    animation: 0.4s scaleUp ease-in forwards;
+                }
+            }
+            a.in {
+                color: $pink;
+            }
+            a.fb {
+                color: $fb;
+            }
+            a.ln {
+                color: $ln ;
+            }
+        }
+    }
+}

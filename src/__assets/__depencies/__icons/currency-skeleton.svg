@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="220" viewBox="0 0 540 220">
+  <g id="currency_skeleton" data-name="currency skeleton" transform="translate(-64 -1364)">
+    <rect id="Rectangle_13" data-name="Rectangle 13" width="540" height="220" rx="10" transform="translate(64 1364)" fill="#f8f8f8"/>
+    <rect id="Rectangle_222" data-name="Rectangle 222" width="118" height="33" rx="5" transform="translate(89 1388)" fill="#eee"/>
+    <rect id="Rectangle_224" data-name="Rectangle 224" width="81" height="30" rx="5" transform="translate(89 1459)" fill="#eee"/>
+    <rect id="Rectangle_226" data-name="Rectangle 226" width="81" height="30" rx="5" transform="translate(89 1519)" fill="#eee"/>
+    <rect id="Rectangle_225" data-name="Rectangle 225" width="81" height="30" rx="5" transform="translate(205 1459)" fill="#eee"/>
+    <rect id="Rectangle_228" data-name="Rectangle 228" width="107" height="30" rx="5" transform="translate(377 1459)" fill="#eee"/>
+    <rect id="Rectangle_227" data-name="Rectangle 227" width="81" height="30" rx="5" transform="translate(205 1519)" fill="#eee"/>
+    <rect id="Rectangle_229" data-name="Rectangle 229" width="107" height="30" rx="5" transform="translate(377 1519)" fill="#eee"/>
+    <rect id="Rectangle_223" data-name="Rectangle 223" width="95" height="23" rx="5" transform="translate(484 1393)" fill="#eee"/>
+  </g>
+</svg>

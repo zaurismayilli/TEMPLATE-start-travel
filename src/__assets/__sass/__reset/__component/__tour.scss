@@ -1,0 +1,80 @@
+/******** [----- Tour -----] *******/
+.tour-section {
+    .tour-more {
+        margin-top: remy(20px);
+    }
+}
+
+.tour {
+    &-image {
+        height: remy(230px);
+        border-radius: remy(10px);
+        overflow: hidden;
+        a {
+            @include full-block;
+            @include transition(.4s, ease-in-out);
+            position: relative;
+            &:hover{
+                transform: scale(1.1);
+                backface-visibility: hidden;
+            }
+            &:before {
+                content: "";
+                @include absolute;
+                opacity: 0;
+                pointer-events: none;
+                z-index: 1;
+                @include transition(.2s, ease-in-out);
+            }
+            img{
+                @include full-image-cover;
+            }
+        }
+    }
+    &-block {
+        margin-bottom: remy(50px);
+    }
+    &-location {
+        color: $gray;
+        line-height: 1.3;
+        padding-left: remy(14px);
+        font-size: $size_m;
+        display: block;
+        margin-top: remy(10px);
+        background:url('icons/marker.svg') no-repeat left center;
+    }
+    &-title {
+        a {
+            font-size: remy(21px);
+            font-family: $Sbold_font;
+            color: $dark_light;
+            line-height: 1.33;
+            margin-top: remy(8px);
+            @include ellipsis(2);
+            height: remy(54px);
+            @include transition(.2s, ease-in-out);
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+    &-more {
+        a {
+            font-size: $size_m;
+            font-family: $Sbold_font;
+            color: $blue-bold;
+            display: inline-block;
+            text-align: center;
+            padding: remy(3px) remy(27px) remy(5px) remy(26px);
+            border-radius: remy(17px);
+            border: solid remy(1px) $blue-bold;
+            @include transition(.2s, ease-in-out);
+            &:hover {
+                background-color:$blue-bold;
+                color: $white;
+                border:remy(1px) solid transparent;
+            }
+        }
+    }
+}
+
